@@ -8,10 +8,16 @@
 import UIKit
 
 class CustomCollectionViewCell: UICollectionViewCell {
+    
+    static let identifier = "CustomCollectionViewCell"
+    
+    static func nib() -> UINib{
+        return UINib(nibName: "CustomCollectionViewCell", bundle: nil)
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        backgroundColor = .blue
     }
 
 }
